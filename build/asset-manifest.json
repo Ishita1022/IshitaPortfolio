@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/IshitaJ/static/css/main.e86133f0.css",
+    "main.js": "/IshitaJ/static/js/main.725bcd1b.js",
+    "static/js/787.7da95b79.chunk.js": "/IshitaJ/static/js/787.7da95b79.chunk.js",
+    "static/media/cloud.gif": "/IshitaJ/static/media/cloud.10ad2764b1eafc45ca0e.gif",
+    "static/media/business.gif": "/IshitaJ/static/media/business.51cec1746df096994997.gif",
+    "static/media/Barter.gif": "/IshitaJ/static/media/Barter.f34cc904c4641664eeba.gif",
+    "static/media/twitter.gif": "/IshitaJ/static/media/twitter.37c2d45fd848dab32479.gif",
+    "static/media/onlineV.gif": "/IshitaJ/static/media/onlineV.9b6344db1de2fce8985f.gif",
+    "static/media/mypic.jpg": "/IshitaJ/static/media/mypic.93b7866e672b7f636c47.jpg",
+    "static/media/daycare.gif": "/IshitaJ/static/media/daycare.2ded1f6555630aa135da.gif",
+    "static/media/CVIshita.pdf": "/IshitaJ/static/media/CVIshita.3c45ac303060feec3027.pdf",
+    "static/media/IJlogo.jpg": "/IshitaJ/static/media/IJlogo.515b586345dc961af993.jpg",
+    "index.html": "/IshitaJ/index.html",
+    "main.e86133f0.css.map": "/IshitaJ/static/css/main.e86133f0.css.map",
+    "main.725bcd1b.js.map": "/IshitaJ/static/js/main.725bcd1b.js.map",
+    "787.7da95b79.chunk.js.map": "/IshitaJ/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e86133f0.css",
+    "static/js/main.725bcd1b.js"
+  ]
+}

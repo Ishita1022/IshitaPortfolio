@@ -1,0 +1,19 @@
+/* resumeStyles.css */
+
+.resume-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .resume-button {
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+  
+  .resume-pdf-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
