@@ -234,11 +234,15 @@ Track
   
   background-color: #000000        ;
   bottom: 0 ;
+  align-items: center !important;
+  
   padding-top: 10px;
   padding-bottom: 8px ;
 }
 .footer-copywright {
+  position: relative;
   text-align: center;
+  left: 300px !important;
   padding-left: 15% !important;
 }
 
