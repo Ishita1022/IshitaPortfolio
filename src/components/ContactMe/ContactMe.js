@@ -4,7 +4,7 @@ import './ContactMe.css';
 import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Footer from '../Footer';
+
 
 const ContactMe = () => {
   const [message, setMessage] = useState('');
