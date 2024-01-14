@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/IshitaPortfolio/static/css/main.f088fa2e.css",
-    "main.js": "/IshitaPortfolio/static/js/main.e25c0c71.js",
+    "main.js": "/IshitaPortfolio/static/js/main.c2251d68.js",
     "static/js/787.7da95b79.chunk.js": "/IshitaPortfolio/static/js/787.7da95b79.chunk.js",
     "static/media/cloud.gif": "/IshitaPortfolio/static/media/cloud.10ad2764b1eafc45ca0e.gif",
     "static/media/business.gif": "/IshitaPortfolio/static/media/business.51cec1746df096994997.gif",
@@ -13,11 +13,11 @@
     "static/media/CVIshita.pdf": "/IshitaPortfolio/static/media/CVIshita.3c45ac303060feec3027.pdf",
     "index.html": "/IshitaPortfolio/index.html",
     "main.f088fa2e.css.map": "/IshitaPortfolio/static/css/main.f088fa2e.css.map",
-    "main.e25c0c71.js.map": "/IshitaPortfolio/static/js/main.e25c0c71.js.map",
+    "main.c2251d68.js.map": "/IshitaPortfolio/static/js/main.c2251d68.js.map",
     "787.7da95b79.chunk.js.map": "/IshitaPortfolio/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f088fa2e.css",
-    "static/js/main.e25c0c71.js"
+    "static/js/main.c2251d68.js"
   ]
 }
