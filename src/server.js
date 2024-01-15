@@ -12,8 +12,8 @@ app.use(express.json());
 
 const mgTransport = mailgunTransport({
   auth: {
-    api_key: '65fcdbc60a9d693b8c42509918428804-4c955d28-ec6a8025',
-    domain:'ishitajanwale.me',
+    api_key: process.env.API_KEY,
+    domain:process.env.MAILGUN_DOMAIN,
   },
 });
 
