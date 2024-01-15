@@ -1,29 +1,28 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
+const mailgunTransport = require('nodemailer-mailgun-transport');
 require('dotenv').config();
 
 const app = express();
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
 
-const transporter = nodemailer.createTransport({
-  host: 'smtp.office365.com',
-  port: 587,
-  secure: false,
-  requireTLS: true,
+const mgTransport = mailgunTransport({
   auth: {
-    user: process.env.OUTLOOK_EMAIL,
-    pass: process.env.OUTLOOK_PASSWORD,
+    api_key: '65fcdbc60a9d693b8c42509918428804-4c955d28-ec6a8025',
+    domain:'ishitajanwale.me',
   },
 });
 
+const transporter = nodemailer.createTransport(mgTransport);
+
 app.post('/send-email', async (req, res) => {
-    console.log('Request Body:', req.body);
-  
-    const { senderName, senderEmail, message } = req.body;
+  console.log('Request Body:', req.body);
+
+  const { senderName, senderEmail, message } = req.body;
 
   try {
     if (!senderEmail || !message) {
@@ -31,15 +30,23 @@ app.post('/send-email', async (req, res) => {
     }
 
     const info = await transporter.sendMail({
-      from: process.env.OUTLOOK_EMAIL,
+      from: 'ishitajanwale22@outlook.com',
       to: 'janwale.i@northeastern.edu',
       subject: 'New Message from Portfolio',
       html: `
+       <h2>Contact Information:</h2>
+       <p><strong>Name:</strong> ${senderName}</p>
+       <p><strong>Email:</strong> ${senderEmail}</p>
 
-            <h2>Email: ${senderEmail}</h2>
-            <p> Hello! You have a new message from your portfolio.</p>
-             <h4>Name: ${senderName}</h4>
-            <p>Message: ${message}</p>`,
+       <h3>Message:</h3>
+       <p>${message}</p>
+
+       <p>This is a message from your portfolio contact form. Please review the information below:</p>
+
+       <hr>
+
+       <p><em>This email was sent from your portfolio contact form and contains legitimate user inquiries.</em></p>
+     `,
     });
 
     console.log('Message sent: %s', info.messageId);

@@ -24,7 +24,7 @@
   
   .navbar-toggler span {
     display: block ;
-    background-color: #D98F89 ;
+    background-color: #000000 ;
     height: 4px ;
     width: 27px ;
     margin-top: 5px ;
@@ -71,7 +71,7 @@
     .navbar {
       padding: 1rem 2rem ;
       font-size: 1.4rem ;
-      background-color: #857171 ;
+      background-color: #c198a7;
     }
     .navbar-nav .nav-item a::after {
       display: none ;

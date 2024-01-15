@@ -78,7 +78,7 @@ Track
 
 
 .home-header {
-  padding-top: 80px ;
+  padding-top: 2% ;
   font-size: 1.4rem;
 }
 
@@ -89,7 +89,7 @@ Track
   background-color: #FBF9F7;
   background-position: top center;
   background-repeat: no-repeat;
-  padding-top: 30px ;
+  padding-top: 3% ;
   
 }
 
@@ -127,15 +127,31 @@ Track
   color: #b562d6 ;
 }
 
+
 @media (max-width: 767px) {
+  .Typewriter{
+    font-size: 0.7em ;
+    font-weight: 500 ;
+    position: absolute ;
+    padding-bottom: 2%;
+  }
+
   .Typewriter__wrapper {
     font-size: 1.4em ;
     font-weight: 500 ;
-    position: absolute ;
+    position: relative ;
   }
   .Typewriter__cursor {
     display: none ;
   }
+  .home-content {
+    padding: 4rem 0 2rem ;
+    color: rgb(0, 0, 0);
+    text-align: left;
+  }
+
+  
+
 }
 
 
@@ -170,7 +186,7 @@ Track
 
 .home-about-social-links {
   justify-content: center ;
-  padding-top: 15px ;
+  padding-top: 1% ;
   padding-bottom: 3%;
   display: inline-block ;
   position: relative ;
@@ -226,6 +242,9 @@ Track
 .icon-colour {
   color: #700c86        ;
 }
+
+
+
 
 /* --------- */
 /* Footer */
@@ -464,11 +483,40 @@ Track
   background-color: #cdbbc1; /* Set the background color when scrolled to skillset section */
 }
 
+
+
 @media (max-width: 767px) {
   .tech-icons {
-    margin: 10px;
+    margin: 21px;
+    width: 7.5rem !important;
     
   }
+  .about-section{
+    padding-top: 10%;
+  }
+
+  .heading{
+    padding-bottom: 1% !important;
+  }
+.blockquote{
+  font-size: 1.0rem !important;
+  text-align: left;
+}
+
+.quote-card-view{
+  text-align: left ;
+  width: fit-content;
+}
+
+.card-body{
+  width: 335px;
+  text-align: left;
+}
+
+.about-img{
+  padding: 0 !important;
+}
+
 }
 
 .tech-icons:hover {
